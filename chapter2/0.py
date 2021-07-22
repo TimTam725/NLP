@@ -4,7 +4,7 @@ def main():
     s = "I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind ."
     s_spl = s.split()
     p = ""
-    print("Hello world")
+    # print("Hello world")
     for i in s_spl:
         if len(i) < 4:
             p += i
