@@ -6,7 +6,9 @@ def main():
     df1 = pd.read_csv("mercol.txt",sep = "\t", header = None)
 
     s = set(df1[0])
-    print(s)
+    print(s
+    print("hello world")
+)
     
 if __name__ == "__main__":
     main()
