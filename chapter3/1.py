@@ -2,7 +2,7 @@ import json
 import re
 
 def is_category(text_uk):
-    pattern = r"^(.*\[\[Category:.*\]\].*)$"
+    pattern = r"^(.*\[\[Category:.*\]\].*)$"#. : なんでもいい１文字　*：前の文字の繰り返し
     result = '\n'.join(re.findall(pattern, text_uk, re.MULTILINE))
     return result
 
@@ -20,10 +20,10 @@ def main():
           text_uk = line['text']
           break
     # print(lis)
-    print(text_uk[0:500])
+    # print(text_uk[0:500])
 
-    # result = is_category(text_uk)
-    # print(result)
+    result = is_category(text_uk)
+    print(result)
 
 if __name__ == "__main__":
     main()
